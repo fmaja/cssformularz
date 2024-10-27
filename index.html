@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>formularz</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+ body {
+            width: 80%;
+        }
+
+.column1 {
+  float: left;
+  width: 25%;
+
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+		
+
+</style>
+</head>
+<body>
+
+ <h1>FORMULARZ</h1>
+
+
+<div class="row">
+  <div class="column1">Podaj imię:</div>
+  <div class="column1"><input type="text" name="imie"></div>
+  <div class="column1">Podaj datę urodzenia:</div>
+  <div class="column1"><input type="date" name="data_urodzenia"></div>
+</div>
+
+<div class="row">
+  <div class="column1">Podaj nazwisko:</div>
+  <div class="column1"><input type="text" name="nazwisko"></div>
+  <div class="column1">Czy posiadasz prawo jazdy?</div>
+  <div class="column1"><input type="checkbox" name="tak"><label for "tak">Tak</label>  <input type="checkbox" name="nie"><label for "nie">Nie</label></div>
+</div>
+
+<div class="row">
+  <div class="column1">Podaj ulicę:</div>
+  <div class="column1"><input type="text" name="ulica"></div>
+  <div class="column1">Podaj hasło:</div>
+  <div class="column1"><input type="password" name="haslo"></div>
+</div>
+
+<div class="row">
+  <div class="column1">Podaj numer domu:</div>
+  <div class="column1"><input type="text" name="dom"></div>
+  <div class="column1">Podaj płeć:</div>
+  <div class="column1"><input type="checkbox" name="kobieta"><label for "kobieta">Kobieta</label>  <input type="checkbox" name="mezczyzna"><label for "mezczyzna">Mężczyzna</label> <br/> <input type="checkbox" name="inna"><label for "inna">Inna</label>  <input type="checkbox" name="niechce"><label for "niechce">Nie podaję</label> </div>
+</div>
+
+<div class="row">
+  <div class="column1">Podaj numer mieszkania:</div>
+  <div class="column1"><input type="number" name="mieszkanie"></div>
+  <div class="column1">Podaj miejsce zamieszkania (miasto):</div>
+  <div class="column1"><input type="text" name="miasto"></div>
+</div>
+
+<div class="row">
+  <div class="column1">Podaj telefon:</div>
+  <div class="column1"><input type="tel" name="telefon"></div>
+  <div class="column1">Podaj panstwo zamieszkania:</div>
+  <div class="column1"><input type="text" name="panstwo"></div>
+</div>
+  <br/><br/>
+  
+<input type="submit" value="ZAPISZ">
+
+</body>
+</html>
